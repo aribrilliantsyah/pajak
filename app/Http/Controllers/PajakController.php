@@ -126,7 +126,7 @@ class PajakController extends Controller
         $pajak->pr= $pr;
         $pajak->save();
         Alert::success('Menambah Data', 'Berhasil')->autoclose(2000);
-        return redirect('pajak');
+        return redirect('/');
     }
 
     /**

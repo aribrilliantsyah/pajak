@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','PajakController@index');
+Route::get('/','PajakController@daftar');
 
 Route::get('/cek', function () {
     return view('layouts.admin');

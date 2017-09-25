@@ -20,8 +20,8 @@ class CreateEntriesTable extends Migration
             $table->foreign('jenis_id')->references('id')
                   ->on('reklames')->onUpdate('cascade')
                   ->onDelete('cascade');
-            $table->decimal('ukuran', 5, 4);
-            $table->decimal('ketinggian', 5, 4);
+            $table->float('ukuran');
+            $table->float('ketinggian');
             $table->text('lokasi');
             $table->integer('sudutpandang_id')->unsigned();
             $table->foreign('sudutpandang_id')->references('id')
